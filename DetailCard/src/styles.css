@@ -1,0 +1,66 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.main {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: color-mix(in srgb, grey, black 40%);
+}
+.img {
+  width: 100%;
+  aspect-ratio: 9/9;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.content h3,
+.content h5 {
+  text-align: center;
+}
+.content h3 {
+  margin-bottom: 5px;
+}
+.content h5 {
+  margin-top: 5px;
+}
+.about h3,
+.interests h3 {
+  text-align: left;
+}
+
+.about p,
+.interests p {
+  font-size: 0.8rem;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  width: 45%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+button img {
+  margin-right: 8px;
+}
+.content {
+  padding: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
