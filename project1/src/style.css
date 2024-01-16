@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+.content {
+  width: 600px;
+  height: 400px;
+  background-color: color-mix(in srgb, grey, black 63%);
+}
+.right-nav {
+  display: flex;
+}
+.right-nav img {
+  margin-right: 5px;
+}
+.right-nav h3 {
+  color: #61dafb;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #21222a;
+  padding: 30px 25px;
+}
+main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main ul li {
+  text-decoration-color: aquamarine;
+}
+.marker::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
