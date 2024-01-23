@@ -1,25 +1,45 @@
-import { useState } from "react";
+import Card from "./Card";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import "./styles.css";
+import data from "./data";
+export default function App() {
+  const card = data.map((data) => {
+    return (
+      <Card
+        key={data.id}
+        {...data}
+        //data={data}
+        // img={data.coverImg}
+        // rate={data.stats.rating}
+        // review={data.stats.reviewCount}
+        // location={data.location}
+        // title={data.title}
+        // price={data.price}
 
-function App() {
-  let [count, setCount] = useState(0);
-
-  function decrementCount() {
-    setCount((prevcount) => prevcount - 1);
-  }
-  function incrementCount() {
-    setCount((prevcount) => prevcount + 1);
-  }
-  function reset() {
-    setCount((count = 0));
-  }
+        //openSpots={data.openSpots} //added the letter u to spouts by accident
+      />
+    );
+  });
+  // const cards = data.map((item) => {
+  //   return (
+  //     <Card
+  //       img={item.coverImg}
+  //       rate={item.stats.rating}
+  //       review={item.stats.reviewCount}
+  //       location={item.location}
+  //       title={item.title}
+  //       price={item.price}
+  //     />
+  //   );
+  // });
   return (
     <>
-      <button onClick={decrementCount}>-</button>
-      <span>{count}</span>
-      <button onClick={incrementCount}>+</button>
-      <button onClick={reset}>Reset Count</button>
+      <main>
+        <Navbar />
+        <Hero />
+        <div className="cards">{card}</div>
+      </main>
     </>
   );
 }
-
-export default App;
